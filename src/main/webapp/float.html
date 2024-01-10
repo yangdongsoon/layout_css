@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<title>css 레이아웃 실습</title>
+<style>
+	#boundary{
+		display: flow-root;
+		height: 1px dotted black
+	}
+	.f-left{
+		float: left;
+		margin-right: 40px
+	}
+
+</style>
+</head>
+<body>
+	<h1>float</h1>
+	
+	<p>float 속성은 웹요소를 문서 위에 떠있게 만듭니다.p270
+	여기서 떠있다는 의미는 요소가 왼쪽구석이나 오른쪽구석에 배치된다는 것을 말한다.</p>
+	
+	<p>원래 float은 디자인 배치가 아니라, 이미지와 텍스트가 함께 나열될때 이미지의
+	위치를 결정하기 위한 방법이었다.</p>
+	
+	<h2>float 속성</h2>
+	<ul>
+		<li>left : 요소를 왼쪽 구석에 배치</li>
+		<li>right : 요소를 오른쪽 구석에 배치</li>
+	</ul>
+	<h3>float실습</h3>
+	<div id="boundary">
+		<img src="https://picsum.photos/200/300" alt="placeholder" class="f-left"/>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium unde mollitia eligendi deserunt ullam maxime adipisci facere suscipit asperiores eos dolorem praesentium perspiciatis repudiandae nulla nisi quidem optio? Amet.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium unde mollitia eligendi deserunt ullam maxime adipisci facere suscipit asperiores eos dolorem praesentium perspiciatis repudiandae nulla nisi quidem optio? Amet.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium unde mollitia eligendi deserunt ullam maxime adipisci facere suscipit asperiores eos dolorem praesentium perspiciatis repudiandae nulla nisi quidem optio? Amet.</p>
+	</div>
+</body>
+</html>
