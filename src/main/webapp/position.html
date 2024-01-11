@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>css 레이아웃 실습</title>
+<style>
+*{
+	margin: 0;
+	padding: 0
+}
+body {
+	height:5000px;
+}
+	p{
+	border: 1px solid #333;
+	padding: 1rem;
+	}
+	#pos1{
+	position:static;
+	left:100px;
+	background-color: gold;
+	}
+	#pos2{
+	position:relative;
+	background-color: orange;
+	left: 100px;
+	top: 100px
+	}
+	#pos3{
+	position:absolute;
+	background-color: salmon;
+	left: 200px;
+	top: 200px
+	}
+	#pos4{
+	position:fixed;
+	background-color: tomato;
+	right: 5%;
+	bottom: 3%;
+	}
+	#pos5{
+	position:sticky;
+	background-color: cadetblue;
+	right:5%;
+	top:100px;
+	width:100px;
+	height:200px
+	}
+
+
+
+
+
+</style>
+</head>
+<body>
+	<h1>position  기법(p280)</h1>
+	<p>포지션은 웹문서에서 이미지나 글씨등을 원하는 위치에 자유롭게 둘때 사용합니다.</p>
+	<p>position 속성은 자주 사용하지만, 그 만큼 실수하기도 쉬운 부분이므로
+	꼼꼼하게 살펴보세요</p>
+	<ul>종류
+		<li>static : 문서의 흐름에 맞게 배치(default), block은 block처럼 inline은 inline처럼</li>
+		<li>relative : 위치값(left,right,bottom,top)을 지정할 수 있다는 점을 빼고
+		static과 같다.</li>
+		<li>absolute : relative값을 사용한 상위요소를 기준으로 위치를 지정해 배치합니다.</li>
+		<li>fixed : 브라우저 창(=모니터)을 기준으로 위치를 지정해 배지합니다.</li>
+		<li>sticky : static+absolute 방식으로 동작하는 새로운 위치 종류</li>
+	</ul>
+	<h3>position 위치를 지정하는 속성</h3>
+	<ol>
+		<li>left</li>
+		<li>right</li>
+		<li>bottom</li>
+		<li>top</li>
+	</ol>
+	<h4>position 간단실습</h4>
+	<p id="pos1">static</p>
+	<p id="pos2">relative
+	<p id="pos3">absolute</p>
+	<p id="pos4">fixed</p>
+	<p id="pos5">sticky</p>
+</body>
+</html>
