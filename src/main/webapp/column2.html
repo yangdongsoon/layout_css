@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>float을 이용한 2단 레이아웃 실습 p274</title>
+<style>
+	#container {
+		width: 1200px;
+		margin :20px auto;
+	}
+	#header {
+		width: 100%;
+		height: 120px;
+		background-color: #acacac;
+	}
+	#sidebar {
+		width: 300px;
+		height: 600px;
+		background-color: #e9e9e9;
+		float: left;
+	}
+	#contents {
+		width: 900px;
+		height: 600px;
+		background-color: #f7f7f7;
+		float: left;
+	}
+	#footer {
+		width: 100%;
+		height: 100px;
+		background-color: #888888;
+		clear: left;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">헤더 : 사이트 제목(로고), 메뉴, 검색 등</div>
+		<div id="sidebar">사이드</div>
+		<div id="contents">본문 : 실제로 담을 내용</div>
+		<div id="footer">푸터 : 사이트 소유권 정보</div>
+		
+	</div>
+
+
+</body>
+</html>
