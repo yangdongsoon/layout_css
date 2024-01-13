@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css레이아웃 실습</title>
+<style>
+	.container{
+		width:500px;
+		height: 300px;
+		border: 1px dashed darkred;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	
+	}
+	.item{
+		width: 50px;
+		height: 50px;
+		border: 1px solid #333;
+		padding: 1rem;
+		margin: .5rem;
+	}
+	.item2 {
+		align-self:flex-end;
+	}
+		
+	
+</style>
+</head>
+<body>
+	<h1>플렉서블박스 레이아웃(p411)</h1>
+	<p>그리드 레이아웃을 기본으로 하고 각 박스를 원하는 위치에 배치하는 방법으로, 여유 공간이 
+	생길경우 너비나 높이를 적절하게 늘이거나 줄일 수 있다.</p>
+	<h2>실습</h2>
+	<div class="container">
+		<div class="item item1">1</div>
+		<div class="item item2">2</div>
+		<div class="item item3">3</div>
+		
+	
+
+</body>
+</html>
