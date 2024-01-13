@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>당근마켓 클론코딩</title>
+<style>
+* {
+	margin :0;
+	padding :0;
+}
+a, a:link {
+	text-decoration: none;
+	color : black;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.container{
+	max-width: 1200px;
+}
+.mx-auto{
+	margin :0 auto;
+}
+.d-flex {
+	display: flex
+}
+.items-center{
+	align-items: center;
+}
+.justify-between{
+	justify-content: space-between;
+}
+.gap-1{
+	gap: 1rem
+}
+.bg-beige {
+	background-color: #fffae0
+}
+.store-box h2{
+	font-size: 3rem;
+}
+.store-box p{
+	margin: 2rem 0;
+}
+.btn {
+	padding: 1rem 1rem;
+	background-color : coral;
+	boredr: 0;
+	border-radius: .5rem;
+	color: white;
+	width:140px;
+}
+
+</style>
+</head>
+<body>
+	<div id="header">
+ 		<div class="container d-flex items-center justify-between mx-auto">
+ 			<div class="logo">
+ 				<img src="carrot-logo.png" alt="당근마켓" />
+ 			</div>	
+ 			<div class="nav d-flex gap-1">
+ 				<a href="#">중고거래</a>
+ 				<a href="#">동네업체</a>
+ 				<a href="#">알바</a>
+ 				<a href="#">부동산 직거래</a>
+ 				<a href="#">중고차 직거래</a>
+ 			
+ 			</div>	
+ 			<div class="search">
+ 				<input type="search" id="search_word" placeholder="물품이나 동네를 검색해보세요">
+ 			</div>	
+ 			<div class="chat">
+ 				<button type="button">채팅하기</button>
+ 			</div>
+ 		</div>
+	</div>
+	<div id="store" class="bg-beige">
+		<div class="container mx-auto d-flex items-center justify-between">
+				<div class="store-box">
+					<h2>당신 근처의<br> 지역 생활 커뮤니티</h2>
+					<p>동네라서 가능한 모든 것<br> 당근에서 가까운 이웃과 함께해요.</p>
+					<button type="button"class="btn google-btn">google play</button>
+					<button type="button"class="btn apple-btn">app store</button>
+				</div>
+				<div class="character-box">
+					<img src="big-carrot-character.webp" width="500" alt="당근마켓 마스코트">
+				</div>
+			
+		
+		
+		</div>
+	
+	
+	</div>
+
+</body>
+</html>
